@@ -7,4 +7,8 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.13
 )
 
-require github.com/alexflint/go-scalar v1.1.0 // indirect
+require (
+	github.com/alexflint/go-scalar v1.1.0 // indirect
+	github.com/golang/protobuf v1.5.2 // indirect
+	google.golang.org/protobuf v1.28.0 // indirect
+)
