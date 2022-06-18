@@ -54,7 +54,7 @@ func emailEntryFromRow(row *sql.Rows) (*EmailEntry, error) {
 
 func CreateEmail(db *sql.DB, email string) error {
 	_, err := db.Exec(`
-	INSERT INTO emails(email, confirmed_at, opt_out
+	INSERT INTO emails(email, confirmed_at, opt_out)
 	VALUES (?, 0, false)`, email)
 
 	if err != nil {
